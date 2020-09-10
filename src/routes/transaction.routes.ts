@@ -1,8 +1,8 @@
-import { Router } from 'express';
+import { Router, Request, Response } from 'express';
 
 const transactionRouter = Router();
 
-transactionRouter.post('/', async (request, response) => {
+transactionRouter.post('/', async (request: Request, response: Response) => {
   try {
     // TODO
   } catch (err) {
