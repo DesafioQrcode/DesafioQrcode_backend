@@ -6,9 +6,9 @@ import app from '../app';
 describe('transaction', () => {
   it('should be able to generate a new qrcode', async () => {
     const requestBody = {
-      payerIdentifier: '51101547081',
-      value: 500,
-      recieverIdentifier: '04396243049',
+      cpf: '51101547081',
+      valor: 500,
+      cnpj: '04396243049',
     };
 
     const response = await request(app).post('/transactions').send(requestBody);
